@@ -32,3 +32,6 @@ d:\documents\visual studio 2012\Projects\Caerfreton\Caerfreton\obj\Debug\BasicPe
 d:\documents\visual studio 2012\Projects\Caerfreton\Caerfreton\obj\Debug\MembersListControl.baml
 d:\documents\visual studio 2012\Projects\Caerfreton\Caerfreton\obj\Debug\MemberSupplementaryDetailsControl.baml
 d:\documents\visual studio 2012\Projects\Caerfreton\Caerfreton\obj\Debug\MemberSupplementaryDetailsControl.g.cs
+D:\Documents\Visual Studio 2012\Projects\Caerfreton-dev\Caerfreton\bin\Debug\Caerfreton.exe.config
+D:\Documents\Visual Studio 2012\Projects\Caerfreton-dev\Caerfreton\obj\Debug\Caerfreton.exe
+D:\Documents\Visual Studio 2012\Projects\Caerfreton-dev\Caerfreton\obj\Debug\Caerfreton.pdb

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="500">
     <Grid x:Name="ScheduleControlGrid">
@@ -31,13 +32,118 @@
                 >
                 <Label
                     Content="Start Time:"/>
-                <DatePicker
-                    x:Name="StartDatePicker"/>
-                
+                <WindowsFormsHost Height="30" Width="100">
+                    <wf:DateTimePicker
+                        x:Name="StartDateTimePicker" />
+                </WindowsFormsHost>
+                <Label
+                    Content="Duration:" Margin="20,0,0,0"/>
+                <TextBox
+                    x:Name="DurationText"
+                    Width="80"
+                    Text="0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                <ComboBox
+                    x:Name="DurationUnitsComboBox"
+                    Width="60"
+                    >
+                    <ComboBoxItem Content="Mins"/>
+                    <ComboBoxItem Content="Hrs"/>
+                </ComboBox>
+
+
             </StackPanel>
             <StackPanel
                 Orientation="Horizontal"
                 >
+                <Label
+                    Content=" End Time:" Margin="1,0,0,0"/>
+                <WindowsFormsHost Height="30" Width="100">
+                    <wf:DateTimePicker
+                        x:Name="EndDateTimePicker" />
+                </WindowsFormsHost>
+            </StackPanel>
+        </StackPanel>
+        
+        <TextBox
+            Grid.Row="2"
+            x:Name="NotesTextBox"
+            />
+        
+        <StackPanel
+            Grid.Row="3"
+            Orientation="Vertical">
+            <StackPanel
+                Orientation="Horizontal">
+                <StackPanel
+                    Orientation="Vertical" Margin="10,0,0,0">
+                    <RadioButton
+                        x:Name="DailyRadioButton"
+                        Content="Daily"
+                        IsChecked="True"/>
+                    <RadioButton
+                        x:Name="WeeklyRadioButton"
+                        Content="Weekly"/>
+                    <RadioButton
+                        x:Name="MonthlyRadioButton"
+                        Content="Monthly"/>
+                    <RadioButton
+                        x:Name="YearlyRadioButton"
+                        Content="Yearly"/>
+                </StackPanel>
+                
+                <StackPanel
+                    Margin="10,0,0,0"
+                    Orientation="Vertical">
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <RadioButton Content="Every " IsChecked="True" x:Name="EveryRadioButton"/>
+                        <TextBox x:Name="RepeatTextBox" Width="20" Text="0"/>
+                        <Label x:Name="RepeatUnits" Content="Day(s)"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Content="Every Workday" x:Name="EveryWorkdayRadioButton"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Content="Weekends" x:Name="WeekendsRadioButton"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Content="Every" x:Name="EveryDayRadioButton"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="Mon" x:Name="MonCheckBox"/>
+                        <CheckBox Content="Tue" x:Name="TueCheckBox"/>
+                        <CheckBox Content="Wed" x:Name="WedCheckBox"/>
+                        <CheckBox Content="Thu" x:Name="ThuCheckBox"/>
+                        <CheckBox Content="Fri" x:Name="FriCheckBox"/>
+                        <CheckBox Content="Sat" x:Name="SatCheckBox"/>
+                        <CheckBox Content="Sun" x:Name="SunCheckBox"/>
+                        
+                    </StackPanel>
+                </StackPanel>
+                
+                
+                <StackPanel
+                    Orientation="Vertical" Margin="-60,0,0,0">
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <Label
+                            Content="Start Date:"/>
+                        <DatePicker
+                            x:Name="StartDatePicker"/>
+                    </StackPanel>
+                    
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <Label
+                            Content="End Date:"/>
+                        <DatePicker
+                            x:Name="EndDatePicker" Margin="5,0,0,0"/>
+                    </StackPanel>
+                     
+                </StackPanel>
                 
             </StackPanel>
         </StackPanel>
