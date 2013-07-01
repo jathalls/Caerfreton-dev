@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Caerfreton" Class="CFdbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Caerfreton.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Caerfreton.Properties.Settings" SettingsPropertyName="CaerfretonConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Address" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="House" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="District" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Town" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PostCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Address_NextOfKin" Member="NextOfKins" ThisKey="Id" OtherKey="AddressId" Type="NextOfKin" />
+      <Association Name="Address_PersonalDetail" Member="PersonalDetails" ThisKey="Id" OtherKey="AddressId" Type="PersonalDetail" />
+      <Association Name="Address_Reference" Member="References" ThisKey="Id" OtherKey="AddressId" Type="Reference" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Schedule" Member="Schedules">
+    <Type Name="Schedule">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Recurrence" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Monday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Tuesday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Wednesday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Thursday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Friday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Saturday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Sunday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OrdinalValue" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Association Name="Schedule_Need" Member="Needs" ThisKey="Id" OtherKey="ScheduleId" Type="Need" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactDetails" Member="ContactDetails">
+    <Type Name="ContactDetail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ContactDetail_Link_NextOfKin_Contact" Member="Link_NextOfKin_Contacts" ThisKey="Id" OtherKey="ContactId" Type="Link_NextOfKin_Contact" />
+      <Association Name="ContactDetail_Link_PersonalDetails_Contact" Member="Link_PersonalDetails_Contacts" ThisKey="Id" OtherKey="ContactId" Type="Link_PersonalDetails_Contact" />
+      <Association Name="ContactDetail_Link_Reference_Contact" Member="Link_Reference_Contacts" ThisKey="Id" OtherKey="ContactId" Type="Link_Reference_Contact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link_NextOfKin_Contacts" Member="Link_NextOfKin_Contacts">
+    <Type Name="Link_NextOfKin_Contact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NextOfKinId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ContactDetail_Link_NextOfKin_Contact" Member="ContactDetail" ThisKey="ContactId" OtherKey="Id" Type="ContactDetail" IsForeignKey="true" />
+      <Association Name="NextOfKin_Link_NextOfKin_Contact" Member="NextOfKin" ThisKey="NextOfKinId" OtherKey="Id" Type="NextOfKin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link_PersonalDetails_Contacts" Member="Link_PersonalDetails_Contacts">
+    <Type Name="Link_PersonalDetails_Contact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonalDetailsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ContactDetail_Link_PersonalDetails_Contact" Member="ContactDetail" ThisKey="ContactId" OtherKey="Id" Type="ContactDetail" IsForeignKey="true" />
+      <Association Name="PersonalDetail_Link_PersonalDetails_Contact" Member="PersonalDetail" ThisKey="PersonalDetailsId" OtherKey="Id" Type="PersonalDetail" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link_PersonalDetails_LocalGroup" Member="Link_PersonalDetails_LocalGroups">
+    <Type Name="Link_PersonalDetails_LocalGroup">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonalDetailsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocalGroupid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isManager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="LocalGroup_Link_PersonalDetails_LocalGroup" Member="LocalGroup" ThisKey="LocalGroupid" OtherKey="Id" Type="LocalGroup" IsForeignKey="true" />
+      <Association Name="PersonalDetail_Link_PersonalDetails_LocalGroup" Member="PersonalDetail" ThisKey="PersonalDetailsId" OtherKey="Id" Type="PersonalDetail" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link_PersonalDetails_Reference" Member="Link_PersonalDetails_References">
+    <Type Name="Link_PersonalDetails_Reference">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonalDetailsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReferenceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="PersonalDetail_Link_PersonalDetails_Reference" Member="PersonalDetail" ThisKey="PersonalDetailsId" OtherKey="Id" Type="PersonalDetail" IsForeignKey="true" />
+      <Association Name="Reference_Link_PersonalDetails_Reference" Member="Reference" ThisKey="ReferenceId" OtherKey="Id" Type="Reference" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link_Reference_Contacts" Member="Link_Reference_Contacts">
+    <Type Name="Link_Reference_Contact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReferenceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ContactDetail_Link_Reference_Contact" Member="ContactDetail" ThisKey="ContactId" OtherKey="Id" Type="ContactDetail" IsForeignKey="true" />
+      <Association Name="Reference_Link_Reference_Contact" Member="Reference" ThisKey="ReferenceId" OtherKey="Id" Type="Reference" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LocalGroup" Member="LocalGroups">
+    <Type Name="LocalGroup">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="LocalGroup_Link_PersonalDetails_LocalGroup" Member="Link_PersonalDetails_LocalGroups" ThisKey="Id" OtherKey="LocalGroupid" Type="Link_PersonalDetails_LocalGroup" />
+      <Association Name="LocalGroup_PersonalDetail" Member="PersonalDetails" ThisKey="Id" OtherKey="LocalGroupId" Type="PersonalDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Name" Member="Names">
+    <Type Name="Name">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Forename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Middle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Name_NextOfKin" Member="NextOfKins" ThisKey="Id" OtherKey="NameId" Type="NextOfKin" />
+      <Association Name="Name_PersonalDetail" Member="PersonalDetails" ThisKey="Id" OtherKey="NameId" Type="PersonalDetail" />
+      <Association Name="Name_Reference" Member="References" ThisKey="Id" OtherKey="NameId" Type="Reference" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Needs" Member="Needs">
+    <Type Name="Need">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonalDetailsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ShortDescription" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LongDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Type" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Association Name="Schedule_Need" Member="Schedule" ThisKey="ScheduleId" OtherKey="Id" Type="Schedule" IsForeignKey="true" />
+      <Association Name="PersonalDetail_Need" Member="PersonalDetail" ThisKey="PersonalDetailsId" OtherKey="Id" Type="PersonalDetail" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NextOfKin" Member="NextOfKins">
+    <Type Name="NextOfKin">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddressId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Relationship" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="NextOfKin_Link_NextOfKin_Contact" Member="Link_NextOfKin_Contacts" ThisKey="Id" OtherKey="NextOfKinId" Type="Link_NextOfKin_Contact" />
+      <Association Name="NextOfKin_PersonalDetail" Member="PersonalDetails" ThisKey="Id" OtherKey="NextOfKinId" Type="PersonalDetail" />
+      <Association Name="Address_NextOfKin" Member="Address" ThisKey="AddressId" OtherKey="Id" Type="Address" IsForeignKey="true" />
+      <Association Name="Name_NextOfKin" Member="Name" ThisKey="NameId" OtherKey="Id" Type="Name" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PersonalDetails" Member="PersonalDetails">
+    <Type Name="PersonalDetail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MothersMaidenName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BankCardNumber" Type="System.String" DbType="NChar(16)" CanBeNull="true" />
+      <Column Name="CVV2" Type="System.String" DbType="NChar(3)" CanBeNull="true" />
+      <Column Name="ExpiryDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Occupation" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="BloodType" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="[Weight(kgs)]" Member="Weight_kgs_" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="[Height(m)]" Member="Height_m_" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DateJoined" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateAccepted" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateLeft" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MemberNumber" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CUHoursAccount" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CUMoneyAccount" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NameId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NINumber" Type="System.String" DbType="NChar(14)" CanBeNull="true" />
+      <Column Name="NextOfKinId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LocalGroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="PersonalDetail_Link_PersonalDetails_Contact" Member="Link_PersonalDetails_Contacts" ThisKey="Id" OtherKey="PersonalDetailsId" Type="Link_PersonalDetails_Contact" />
+      <Association Name="PersonalDetail_Link_PersonalDetails_LocalGroup" Member="Link_PersonalDetails_LocalGroups" ThisKey="Id" OtherKey="PersonalDetailsId" Type="Link_PersonalDetails_LocalGroup" />
+      <Association Name="PersonalDetail_Link_PersonalDetails_Reference" Member="Link_PersonalDetails_References" ThisKey="Id" OtherKey="PersonalDetailsId" Type="Link_PersonalDetails_Reference" />
+      <Association Name="PersonalDetail_Need" Member="Needs" ThisKey="Id" OtherKey="PersonalDetailsId" Type="Need" />
+      <Association Name="PersonalDetail_Reference" Member="References" ThisKey="Id" OtherKey="PersonalDetailsId" Type="Reference" />
+      <Association Name="Address_PersonalDetail" Member="Address" ThisKey="AddressId" OtherKey="Id" Type="Address" IsForeignKey="true" />
+      <Association Name="Name_PersonalDetail" Member="Name" ThisKey="NameId" OtherKey="Id" Type="Name" IsForeignKey="true" />
+      <Association Name="LocalGroup_PersonalDetail" Member="LocalGroup" ThisKey="LocalGroupId" OtherKey="Id" Type="LocalGroup" IsForeignKey="true" />
+      <Association Name="NextOfKin_PersonalDetail" Member="NextOfKin" ThisKey="NextOfKinId" OtherKey="Id" Type="NextOfKin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reference" Member="References">
+    <Type Name="Reference">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddressId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Occupation" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="PersonalDetailsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FollowedUp" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ConfirmedOK" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Reference_Link_PersonalDetails_Reference" Member="Link_PersonalDetails_References" ThisKey="Id" OtherKey="ReferenceId" Type="Link_PersonalDetails_Reference" />
+      <Association Name="Reference_Link_Reference_Contact" Member="Link_Reference_Contacts" ThisKey="Id" OtherKey="ReferenceId" Type="Link_Reference_Contact" />
+      <Association Name="Address_Reference" Member="Address" ThisKey="AddressId" OtherKey="Id" Type="Address" IsForeignKey="true" />
+      <Association Name="Name_Reference" Member="Name" ThisKey="NameId" OtherKey="Id" Type="Name" IsForeignKey="true" />
+      <Association Name="PersonalDetail_Reference" Member="PersonalDetail" ThisKey="PersonalDetailsId" OtherKey="Id" Type="PersonalDetail" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

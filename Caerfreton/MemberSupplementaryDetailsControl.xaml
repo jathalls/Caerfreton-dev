@@ -1,0 +1,219 @@
+﻿<UserControl x:Class="Caerfreton.MemberSupplementaryDetailsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Content="Gender"
+            />
+        <Label
+            Grid.Row="0"
+            Grid.Column="2"
+            Content="Date Of Birth"
+            />
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            Content="NI Number"
+            />
+        <Label
+            Grid.Row="1"
+            Grid.Column="2"
+            Content="Mothers Maiden"
+            />
+        <Label
+            Grid.Row="2"
+            Grid.Column="0"
+            Content="User Name"
+            />
+        <Label
+            Grid.Row="2"
+            Grid.Column="2"
+            Content="Password"
+            />
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Content=""
+            />
+        <Label
+            Grid.Row="3"
+            Grid.Column="0"
+            Content="Bank Card"
+            />
+        <Label
+            Grid.Row="3"
+            Grid.Column="2"
+            Content="Expiry Date"
+            />
+        <Label
+            Grid.Row="4"
+            Grid.Column="0"
+            Content="Occupation"
+            />
+        <Label
+            Grid.Row="4"
+            Grid.Column="2"
+            Content="Blood Group"
+            />
+        <Label
+            Grid.Row="5"
+            Grid.Column="0"
+            Content="Height (m)"
+            />
+        <Label
+            Grid.Row="5"
+            Grid.Column="2"
+            Content="Weight (kg)"
+            />
+        <Label
+            Grid.Row="6"
+            Grid.Column="0"
+            Content="Member No"
+            />
+        <Label
+            Grid.Row="6"
+            Grid.Column="2"
+            Content="Date Joined"
+            />
+        <Label
+            Grid.Row="7"
+            Grid.Column="0"
+            Content="Date Approved"
+            />
+        <Label
+            Grid.Row="7"
+            Grid.Column="2"
+            Content="Date left"
+            />
+        <Label
+            Grid.Row="8"
+            Grid.Column="0"
+            Content="CU Hours a/c"
+            />
+        <Label
+            Grid.Row="8"
+            Grid.Column="2"
+            Content="CU Money a/c"
+            />
+        
+        <TextBox
+            Grid.Row="0"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.Gender ,Mode=TwoWay}"
+            />
+        <DatePicker
+            Grid.Row="0"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.DateOfBirth ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.NINumber ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.MothersMaidenName ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.UserName ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.Password ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="3"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.BankCardNumber ,Mode=TwoWay}"
+            />
+        <DatePicker
+            Grid.Row="3"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.ExpiryDate ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="4"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.Occupation ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="4"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.BloodType ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="5"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.Height_m_ ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="5"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.Weight_kgs_ ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="6"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.MemberNumber ,Mode=TwoWay}"
+            />
+        <DatePicker
+            Grid.Row="6"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.DateJoined ,Mode=TwoWay}"
+            />
+        <DatePicker
+            Grid.Row="7"
+            Grid.Column="1"
+            Text="{Binding Path=PersonaldetailsDep.DateAccepted ,Mode=TwoWay}"
+            />
+        <DatePicker
+            Grid.Row="7"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.DateLeft ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="8"
+            Grid.Column="1"
+            Text="{Binding Path=PersonalDetailsDep.CUHoursAccount ,Mode=TwoWay}"
+            />
+        <TextBox
+            Grid.Row="8"
+            Grid.Column="3"
+            Text="{Binding Path=PersonalDetailsDep.CUMoneyAccount ,Mode=TwoWay}"
+            />
+
+        
+
+    </Grid>
+</UserControl>

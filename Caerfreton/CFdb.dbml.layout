@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20, 12.625" name="CFdb">
+  <DataContextMoniker Name="/CFdbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="46bdf2d7-f5f7-421a-ab0f-8290c2ccf78b" absoluteBounds="0.75, 4.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CFdbDataContext/Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef9dbc55-241c-483f-a35c-7fd3ec446ae5" absoluteBounds="0.765, 4.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="897f34b4-b532-4090-bf7b-9762a70ed35d" absoluteBounds="12.25, 1.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/CFdbDataContext/Schedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ce1e53d-e05c-4bc6-87d0-51101efc07f6" absoluteBounds="12.265, 1.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="745d27d9-a9bf-4f8c-b9ec-a3fc2b2b5869" absoluteBounds="3.5, 4.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/CFdbDataContext/ContactDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="043a8835-2234-4d01-abb9-a3e49084fb2b" absoluteBounds="3.515, 5.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf4db8b2-0a0c-4d07-aac4-558cd3b0319d" absoluteBounds="6.25, 7.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/CFdbDataContext/Link_NextOfKin_Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cec4c99b-c61c-484e-a5a8-5ba4df907fd7" absoluteBounds="6.265, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a68f3e8f-8d2d-459b-a4f6-5f133645b8fb" absoluteBounds="12, 7.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/CFdbDataContext/Link_PersonalDetails_Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7eb6b9c6-2533-41e5-9fd6-bdbd9ece97af" absoluteBounds="12.015, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ceed6360-0383-4a7d-afdc-0c577a967ef9" absoluteBounds="12, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CFdbDataContext/Link_PersonalDetails_LocalGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12af3e16-975f-4ff6-a0f2-fdac7cc0bb94" absoluteBounds="12.015, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40a2ee81-fc55-4126-b4e3-e219492bff35" absoluteBounds="12, 4.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/CFdbDataContext/Link_PersonalDetails_Reference" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05d5c4e6-b7c3-4d34-8624-aedc4ca2df42" absoluteBounds="12.015, 5.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc3fba5a-c579-4e66-b324-f9a2d8a13604" absoluteBounds="17.75, 7.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/CFdbDataContext/Link_Reference_Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8c9a2d7-b60b-4389-90f9-3f44eeaf1f29" absoluteBounds="17.765, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="766117f5-6539-4b6c-8a5a-c6fdbed3f6ae" absoluteBounds="6.5, 4.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CFdbDataContext/LocalGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd743b32-a565-44dd-b41b-bad3b6304cc1" absoluteBounds="6.515, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b300119-ca37-44f8-a640-1b1cd0b5bbe4" absoluteBounds="0.75, 7.625, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/CFdbDataContext/Name" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9379ba6-91ca-47dc-af72-c5c9fa094933" absoluteBounds="0.765, 8.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="926d058c-3f2f-4bdf-9d8e-108187b7fc2d" absoluteBounds="15, 4.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/CFdbDataContext/Need" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50def38f-2cea-43ff-9e89-3725762d75aa" absoluteBounds="15.015, 4.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f84f2d8f-9a88-4256-ae38-9066d7f56a98" absoluteBounds="3.5, 7.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CFdbDataContext/NextOfKin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fb16111-4e36-41b3-8881-1d2988ca59bc" absoluteBounds="3.515, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a51871a-58fe-4130-9301-eb2c033e02c2" absoluteBounds="9.25, 5.75, 2, 5.6169254557291666">
+      <DataClassMoniker Name="/CFdbDataContext/PersonalDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a752dc1-bc0f-46f1-b042-2bc8f9ffec47" absoluteBounds="9.265, 6.21, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="210457d8-fa0f-4152-a6ff-ebfe5613180f" absoluteBounds="15, 7.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CFdbDataContext/Reference" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2238fbd6-b9ec-435e-9d87-06c6d41b78cc" absoluteBounds="15.015, 7.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.19639322916667); (5.91666666666667 : 6.19639322916667 : JumpStart); (6.20833333333333 : 6.19639322916667 : JumpEnd); (6.34375 : 6.19639322916667); (6.34375 : 7.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/ContactDetail/ContactDetail_Link_NextOfKin_Contact" />
+      <nodes>
+        <classShapeMoniker Id="745d27d9-a9bf-4f8c-b9ec-a3fc2b2b5869" />
+        <classShapeMoniker Id="cf4db8b2-0a0c-4d07-aac4-558cd3b0319d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.50444461458333); (6 : 5.50444461458333); (6 : 6.56899251302083); (6.26041666666667 : 6.56899251302083 : JumpStart); (6.42708333333333 : 6.56899251302083 : JumpEnd); (8.32291666666667 : 6.56899251302083 : JumpStart); (8.48958333333333 : 6.56899251302083 : JumpEnd); (8.79166666666667 : 6.56899251302083 : JumpStart); (8.95833333333333 : 6.56899251302083 : JumpEnd); (9 : 6.56899251302083); (9 : 5.5); (9.63541416666667 : 5.5 : JumpStart); (9.80208083333333 : 5.5 : JumpEnd); (10.1666666666667 : 5.5 : JumpStart); (10.3333333333333 : 5.5 : JumpEnd); (11.4166666666667 : 5.5 : JumpStart); (11.7083333333333 : 5.5 : JumpEnd); (11.75 : 5.5); (11.75 : 6.5112939453125); (11.7916666666667 : 6.5112939453125 : JumpStart); (11.9583333333333 : 6.5112939453125 : JumpEnd); (13 : 6.5112939453125); (13 : 7.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/ContactDetail/ContactDetail_Link_PersonalDetails_Contact" />
+      <nodes>
+        <classShapeMoniker Id="745d27d9-a9bf-4f8c-b9ec-a3fc2b2b5869" />
+        <classShapeMoniker Id="a68f3e8f-8d2d-459b-a4f6-5f133645b8fb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.850418921875); (5.91666666666667 : 5.850418921875 : JumpStart); (6.08333333333333 : 5.850418921875 : JumpEnd); (6.125 : 5.850418921875); (6.125 : 6.31899251302083); (6.26041666666667 : 6.31899251302083 : JumpStart); (6.42708333333333 : 6.31899251302083 : JumpEnd); (8.32291666666667 : 6.31899251302083 : JumpStart); (8.48958333333333 : 6.31899251302083 : JumpEnd); (8.75 : 6.31899251302083); (8.75 : 5.25); (9.63541416666667 : 5.25 : JumpStart); (9.80208083333333 : 5.25 : JumpEnd); (10.1666666666667 : 5.25 : JumpStart); (10.3333333333333 : 5.25 : JumpEnd); (11.5 : 5.25); (11.5 : 6.97280110677083); (11.5416666666667 : 6.97280110677083 : JumpStart); (11.7083333333333 : 6.97280110677083 : JumpEnd); (11.7916666666667 : 6.97280110677083 : JumpStart); (11.9583333333333 : 6.97280110677083 : JumpEnd); (12.9166666666667 : 6.97280110677083 : JumpStart); (13.0833333333333 : 6.97280110677083 : JumpEnd); (14.5416666666667 : 6.97280110677083 : JumpStart); (14.7083333333333 : 6.97280110677083 : JumpEnd); (18.75 : 6.97280110677083); (18.75 : 7.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/ContactDetail/ContactDetail_Link_Reference_Contact" />
+      <nodes>
+        <classShapeMoniker Id="745d27d9-a9bf-4f8c-b9ec-a3fc2b2b5869" />
+        <classShapeMoniker Id="cc3fba5a-c579-4e66-b324-f9a2d8a13604" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.40625 : 6.06899251302083); (8.40625 : 11.8790104166667); (12 : 11.8790104166667)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/LocalGroup/LocalGroup_Link_PersonalDetails_LocalGroup" />
+      <nodes>
+        <classShapeMoniker Id="766117f5-6539-4b6c-8a5a-c6fdbed3f6ae" />
+        <classShapeMoniker Id="ceed6360-0383-4a7d-afdc-0c577a967ef9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 2.49120198567708); (16 : 2.49120198567708); (16 : 4.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Schedule/Schedule_Need" />
+      <nodes>
+        <classShapeMoniker Id="897f34b4-b532-4090-bf7b-9762a70ed35d" />
+        <classShapeMoniker Id="926d058c-3f2f-4bdf-9d8e-108187b7fc2d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.56814697265625); (6.25 : 8.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/NextOfKin/NextOfKin_Link_NextOfKin_Contact" />
+      <nodes>
+        <classShapeMoniker Id="f84f2d8f-9a88-4256-ae38-9066d7f56a98" />
+        <classShapeMoniker Id="cf4db8b2-0a0c-4d07-aac4-558cd3b0319d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.65549967447917); (3.125 : 7.03049967447917); (3.125 : 8.53929768880208); (3.16666666666667 : 8.53929768880208 : JumpStart); (3.33333333333333 : 8.53929768880208 : JumpEnd); (3.5 : 8.53929768880208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Address/Address_NextOfKin" />
+      <nodes>
+        <classShapeMoniker Id="46bdf2d7-f5f7-421a-ab0f-8290c2ccf78b" />
+        <classShapeMoniker Id="f84f2d8f-9a88-4256-ae38-9066d7f56a98" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.08214884440104); (3.04166666666667 : 8.08214884440104 : JumpStart); (3.33333333333333 : 8.08214884440104 : JumpEnd); (3.5 : 8.08214884440104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Name/Name_NextOfKin" />
+      <nodes>
+        <classShapeMoniker Id="1b300119-ca37-44f8-a640-1b1cd0b5bbe4" />
+        <classShapeMoniker Id="f84f2d8f-9a88-4256-ae38-9066d7f56a98" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 8.56814697265625); (12 : 8.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/PersonalDetail/PersonalDetail_Link_PersonalDetails_Contact" />
+      <nodes>
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+        <classShapeMoniker Id="a68f3e8f-8d2d-459b-a4f6-5f133645b8fb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 11.0584627278646); (12 : 11.0584627278646)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/PersonalDetail/PersonalDetail_Link_PersonalDetails_LocalGroup" />
+      <nodes>
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+        <classShapeMoniker Id="ceed6360-0383-4a7d-afdc-0c577a967ef9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 6.00564697265625); (11.4166666666667 : 6.00564697265625 : JumpStart); (11.9583333333333 : 6.00564697265625 : JumpEnd); (12 : 6.00564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/PersonalDetail/PersonalDetail_Link_PersonalDetails_Reference" />
+      <nodes>
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+        <classShapeMoniker Id="40a2ee81-fc55-4126-b4e3-e219492bff35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 6.67954752604167); (11.4166666666667 : 6.67954752604167 : JumpStart); (11.7083333333333 : 6.67954752604167 : JumpEnd); (11.7916666666667 : 6.67954752604167 : JumpStart); (11.9583333333333 : 6.67954752604167 : JumpEnd); (12.9166666666667 : 6.67954752604167 : JumpStart); (13.0833333333333 : 6.67954752604167 : JumpEnd); (14.5416666666667 : 6.67954752604167 : JumpStart); (14.7083333333333 : 6.67954752604167 : JumpEnd); (15 : 6.67954752604167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/PersonalDetail/PersonalDetail_Need" />
+      <nodes>
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+        <classShapeMoniker Id="926d058c-3f2f-4bdf-9d8e-108187b7fc2d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.65625); (10.25 : 4.65625); (10.25 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Address/Address_PersonalDetail" />
+      <nodes>
+        <classShapeMoniker Id="46bdf2d7-f5f7-421a-ab0f-8290c2ccf78b" />
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.65625); (3.04166666666667 : 7.65625 : JumpStart); (3.33333333333333 : 7.65625 : JumpEnd); (6.26041666666667 : 7.65625 : JumpStart); (6.42708333333333 : 7.65625 : JumpEnd); (8.32291666666667 : 7.65625 : JumpStart); (8.48958333333333 : 7.65625 : JumpEnd); (9.25 : 7.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Name/Name_PersonalDetail" />
+      <nodes>
+        <classShapeMoniker Id="1b300119-ca37-44f8-a640-1b1cd0b5bbe4" />
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 5.0625); (9.7187475 : 5.0625); (9.7187475 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/LocalGroup/LocalGroup_PersonalDetail" />
+      <nodes>
+        <classShapeMoniker Id="766117f5-6539-4b6c-8a5a-c6fdbed3f6ae" />
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.78125); (6.26041666666667 : 7.78125 : JumpStart); (6.42708333333333 : 7.78125 : JumpEnd); (8.32291666666667 : 7.78125 : JumpStart); (8.48958333333333 : 7.78125 : JumpEnd); (9.25 : 7.78125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/NextOfKin/NextOfKin_PersonalDetail" />
+      <nodes>
+        <classShapeMoniker Id="f84f2d8f-9a88-4256-ae38-9066d7f56a98" />
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15 : 7.5); (14.625 : 7.125); (14.625 : 5.56814697265625); (14 : 5.56814697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Reference/Reference_Link_PersonalDetails_Reference" />
+      <nodes>
+        <classShapeMoniker Id="210457d8-fa0f-4152-a6ff-ebfe5613180f" />
+        <classShapeMoniker Id="40a2ee81-fc55-4126-b4e3-e219492bff35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 8.56814697265625); (17.75 : 8.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Reference/Reference_Link_Reference_Contact" />
+      <nodes>
+        <classShapeMoniker Id="210457d8-fa0f-4152-a6ff-ebfe5613180f" />
+        <classShapeMoniker Id="cc3fba5a-c579-4e66-b324-f9a2d8a13604" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.65587483723958); (3.25 : 5.65587483723958); (3.25 : 6.7612939453125); (6.26041666666667 : 6.7612939453125 : JumpStart); (6.42708333333333 : 6.7612939453125 : JumpEnd); (8.32291666666667 : 6.7612939453125 : JumpStart); (8.48958333333333 : 6.7612939453125 : JumpEnd); (8.79166666666667 : 6.7612939453125 : JumpStart); (8.95833333333333 : 6.7612939453125 : JumpEnd); (9.125 : 6.7612939453125); (9.125 : 5.625); (9.63541416666667 : 5.625 : JumpStart); (9.80208083333333 : 5.625 : JumpEnd); (10.1666666666667 : 5.625 : JumpStart); (10.3333333333333 : 5.625 : JumpEnd); (11.4166666666667 : 5.625 : JumpStart); (11.8333333333333 : 5.625 : JumpEnd); (11.875 : 5.625); (11.875 : 7.22280110677083); (12.9166666666667 : 7.22280110677083 : JumpStart); (13.0833333333333 : 7.22280110677083 : JumpEnd); (14.6394677734375 : 7.22280110677083 : JumpStart); (14.8061344401042 : 7.22280110677083 : JumpEnd); (16.031252 : 7.22280110677083); (16.031252 : 7.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Address/Address_Reference" />
+      <nodes>
+        <classShapeMoniker Id="46bdf2d7-f5f7-421a-ab0f-8290c2ccf78b" />
+        <classShapeMoniker Id="210457d8-fa0f-4152-a6ff-ebfe5613180f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.96759674934896); (3.25 : 8.96759674934896); (3.25 : 7.25); (6.26041666666667 : 7.25 : JumpStart); (6.42708333333333 : 7.25 : JumpEnd); (8.32291666666667 : 7.25 : JumpStart); (8.48958333333333 : 7.25 : JumpEnd); (8.875 : 7.25); (8.875 : 5.375); (9.63541416666667 : 5.375 : JumpStart); (9.80208083333333 : 5.375 : JumpEnd); (10.1666666666667 : 5.375 : JumpStart); (10.3333333333333 : 5.375 : JumpEnd); (11.4166666666667 : 5.375 : JumpStart); (11.5833333333333 : 5.375 : JumpEnd); (11.625 : 5.375); (11.625 : 7.375); (12.9166666666667 : 7.375 : JumpStart); (13.0833333333333 : 7.375 : JumpEnd); (14.7916666666667 : 7.375 : JumpStart); (14.9583333333333 : 7.375 : JumpEnd); (15.515626 : 7.375); (15.515626 : 7.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/Name/Name_Reference" />
+      <nodes>
+        <classShapeMoniker Id="1b300119-ca37-44f8-a640-1b1cd0b5bbe4" />
+        <classShapeMoniker Id="210457d8-fa0f-4152-a6ff-ebfe5613180f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 9.48964680989583); (15 : 9.48964680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CFdbDataContext/PersonalDetail/PersonalDetail_Reference" />
+      <nodes>
+        <classShapeMoniker Id="0a51871a-58fe-4130-9301-eb2c033e02c2" />
+        <classShapeMoniker Id="210457d8-fa0f-4152-a6ff-ebfe5613180f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

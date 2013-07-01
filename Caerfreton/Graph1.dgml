@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AddressControl" Bounds="320.143341064453,281.849442623901,101.936666666667,25.96" UseManualLocation="True" />
+    <Node Id="MainPanel" Bounds="7.62833333333333,67.48,75.38,25.96" UseManualLocation="True" />
+    <Node Id="MainWindow" Bounds="1.4210854715202E-14,-1.77635683940025E-15,90.2566666666666,25.96" />
+    <Node Id="MemberDetailViewControl" Bounds="249.147920519511,207.152573410034,160.306666666667,25.96" UseManualLocation="True" />
+    <Node Id="MemberListControl" Bounds="-14.9041632588705,140.424946643066,122.036666666667,25.96" UseManualLocation="True" />
+    <Node Id="MemberListViewControl" Bounds="-25.5812467956543,205.192462463379,147.346666666667,25.96" UseManualLocation="True" />
+    <Node Id="NameControl" Bounds="198.143341064453,280.889342623901,91.1233333333334,25.96" UseManualLocation="True" />
+    <Node Id="Toolbar" Bounds="-222.167913462321,207.385043640137,60.5866666666667,25.96" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="MainPanel" Target="MemberListControl" Bounds="45.4599464453479,93.44,0.414425450708414,37.9854822316284" />
+    <Link Source="MainWindow" Target="MainPanel" Bounds="45.1648804584074,25.96,0.0915650085699014,32.5200356752468" />
+    <Link Source="MemberDetailViewControl" Target="AddressControl" Bounds="336.566608671391,233.112573410034,22.8838675216472,40.8834265977915" />
+    <Link Source="MemberDetailViewControl" Target="NameControl" Bounds="265.591431286478,233.112573410034,48.6421801065034,41.9027395602375" />
+    <Link Source="MemberListControl" Target="MemberDetailViewControl" Bounds="101.200324423699,166.384946643066,164.25467876614,38.7034774086399" />
+    <Link Source="MemberListControl" Target="MemberListViewControl" Bounds="46.5105625463275,166.384946643066,0.910411192352456,29.8117096451073" />
+    <Link Source="MemberListControl" Target="Toolbar" Bounds="-152.917632797232,166.384946643066,152.898447094508,43.0192386799687" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>
