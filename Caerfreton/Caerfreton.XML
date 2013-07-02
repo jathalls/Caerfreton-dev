@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Caerfreton</name>
+    </assembly>
+    <members>
+        <member name="T:Caerfreton.ScheduleControl">
+            <summary>
+            Interaction logic for ScheduleControl.xaml
+            </summary>
+            <summary>
+            ScheduleControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ScheduleControl.NeedDepProperty">
+            <summary>
+            Need Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ScheduleControl.ScheduleDepProperty">
+            <summary>
+            Schedule Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ScheduleControl.StartTimeDepProperty">
+            <summary>
+            StartTimeDep Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ScheduleControl.EndTimeDepProperty">
+            <summary>
+            EndTimeDep Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ScheduleControl.StartDateDepProperty">
+            <summary>
+            StartDateDep Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ScheduleControl.EndDateDepProperty">
+            <summary>
+            EndDateDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.ScheduleControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ScheduleControl.NeedDep">
+            <summary>
+            Gets or sets the Need property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ScheduleControl.ScheduleDep">
+            <summary>
+            Gets or sets the Schedule property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ScheduleControl.StartTimeDep">
+            <summary>
+            Gets or sets the StartTimeDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ScheduleControl.EndTimeDep">
+            <summary>
+            Gets or sets the EndTimeDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ScheduleControl.StartDateDep">
+            <summary>
+            Gets or sets the StartDateDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ScheduleControl.EndDateDep">
+            <summary>
+            Gets or sets the EndDateDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.AddressControl">
+            <summary>
+            Interaction logic for AddressControl.xaml
+            </summary>
+            <summary>
+            AddressControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.AddressControl.AddressDepProperty">
+            <summary>
+            AddressDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.AddressControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.AddressControl.AddressDep">
+            <summary>
+            Gets or sets the AddressDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Caerfreton.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Caerfreton.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Caerfreton.BasicPersonControl">
+            <summary>
+            Interaction logic for BasicPersonControl.xaml
+            </summary>
+            <summary>
+            BasicPersonControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.BasicPersonControl.ContactListProperty">
+            <summary>
+            ContactList Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.BasicPersonControl.NameDepProperty">
+            <summary>
+            NameDep Dependency Property
+            </summary>
+        </member>
+        <member name="F:Caerfreton.BasicPersonControl.AddressDepProperty">
+            <summary>
+            AddressDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.BasicPersonControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.BasicPersonControl.ContactList">
+            <summary>
+            Gets or sets the ContactList property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.BasicPersonControl.NameDep">
+            <summary>
+            Gets or sets the NameDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="P:Caerfreton.BasicPersonControl.AddressDep">
+            <summary>
+            Gets or sets the AddressDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.ContactControl">
+            <summary>
+            Interaction logic for ContactControl.xaml
+            </summary>
+            <summary>
+            ContactControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.ContactControl.ContactDepProperty">
+            <summary>
+            ContactDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.ContactControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.ContactControl.ContactDep">
+            <summary>
+            Gets or sets the ContactDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:Caerfreton.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Caerfreton.MemberDetailViewControl">
+            <summary>
+            Interaction logic for MemberDetailViewControl.xaml
+            </summary>
+            <summary>
+            MemberDetailViewControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.MemberDetailViewControl.MemberDetailDepProperty">
+            <summary>
+            MemberDetailDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.MemberDetailViewControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.MemberDetailViewControl.MemberDetailDep">
+            <summary>
+            Gets or sets the MemberDetailDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.MemberListViewControl">
+            <summary>
+            Interaction logic for MemberListViewControl.xaml
+            </summary>
+            <summary>
+            MemberListViewControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.MemberListViewControl.MemberListDepProperty">
+            <summary>
+            MemberListDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.MemberListViewControl.OnSelectionChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Caerfreton.MemberListViewControl.SelectionChanged"/> event.
+            </summary>
+            <param name="e"><see cref="T:System.EventArgs"/> object that provides the arguments for the event.</param>
+        </member>
+        <member name="M:Caerfreton.MemberListViewControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.MemberListViewControl.MemberListDep">
+            <summary>
+            Gets or sets the MemberListDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="E:Caerfreton.MemberListViewControl.SelectionChanged">
+            <summary>
+            Event raised after the <see cref="!:Text"/> property value has changed.
+            </summary>
+        </member>
+        <member name="T:Caerfreton.DataGridSelectionChangedEventArgs">
+            <summary>
+            Provides arguments for an event.
+            </summary>
+        </member>
+        <member name="M:Caerfreton.DataGridSelectionChangedEventArgs.#ctor(Caerfreton.PersonalDetail)">
+            <summary>
+            Constructs a new instance of the <see cref="T:Caerfreton.DataGridSelectionChangedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:Caerfreton.MembersListControl">
+            <summary>
+            Interaction logic for MembersListControl.xaml
+            </summary>
+            <summary>
+            MembersListControl
+            </summary>
+        </member>
+        <member name="M:Caerfreton.MembersListControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Caerfreton.MemberSupplementaryDetailsControl">
+            <summary>
+            Interaction logic for MemberSupplementaryDetailsControl.xaml
+            </summary>
+            <summary>
+            MemberSupplementaryDetailsControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.MemberSupplementaryDetailsControl.PersonalDetailsDepProperty">
+            <summary>
+            PersonalDetailsDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.MemberSupplementaryDetailsControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.MemberSupplementaryDetailsControl.PersonalDetailsDep">
+            <summary>
+            Gets or sets the PersonalDetailsDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.NameControl">
+            <summary>
+            Interaction logic for NameControl.xaml
+            </summary>
+            <summary>
+            NameControl
+            </summary>
+        </member>
+        <member name="F:Caerfreton.NameControl.NameDepProperty">
+            <summary>
+            NameDep Dependency Property
+            </summary>
+        </member>
+        <member name="M:Caerfreton.NameControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Caerfreton.NameControl.NameDep">
+            <summary>
+            Gets or sets the NameDep property.  This dependency property 
+            indicates ....
+            </summary>
+        </member>
+        <member name="T:Caerfreton.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Caerfreton.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Caerfreton.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

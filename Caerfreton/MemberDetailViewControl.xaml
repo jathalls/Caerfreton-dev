@@ -32,7 +32,7 @@
             Grid.Row="2"
             Grid.Column="0"
             VerticalAlignment="Stretch"
-            HorizontalAlignment="Stretch"
+            HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto"
             >
             <Grid.RowDefinitions>
                 <RowDefinition Height="289"/>
@@ -43,7 +43,7 @@
                 HorizontalAlignment="Stretch"
                 x:Name="memberSupplementaryDetailsControl" 
                 />
-            
+            <ScrollViewer Grid.Row="1" Margin="0,10,0,-10">
             <TabControl Name="MemberExtrasTabControl"
                 Grid.Row="1"
                 >
@@ -56,7 +56,7 @@
                 <TabItem 
                     x:Name="ReferencesTabItem"  
                     Header="References">
-                    <TabControl x:Name="ReferencesTabControl">
+                    <TabControl x:Name="ReferencesTabControl" TabStripPlacement="Left">
                         <TabItem x:Name="Ref1TabItem" Header="Ref1">
                             <my:BasicPersonControl x:Name="Ref1BasicPersonControl"></my:BasicPersonControl>
                         </TabItem>
@@ -68,7 +68,17 @@
                 <TabItem 
                     x:Name="NeedsTabItem"  
                     Header="Needs">
-                    
+                    <TabControl x:Name="NeedsTabControl" TabStripPlacement="Left">
+                        <TabItem
+                            x:Name="Need1ScheduleTabItem"
+                            Header="Need1"
+                            >
+                            <my:ScheduleControl
+                                x:Name="scheduleControl"
+                                ></my:ScheduleControl>
+
+                        </TabItem>
+                    </TabControl>
                 </TabItem>
                 <TabItem 
                     x:Name="AvailabilityTabItem"  
@@ -77,7 +87,7 @@
                 </TabItem>
 
             </TabControl>
-
+            </ScrollViewer>
 
 
         </Grid>

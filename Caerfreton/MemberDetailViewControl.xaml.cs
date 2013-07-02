@@ -42,7 +42,33 @@ namespace Caerfreton {
                 if ( MemberDetailAddress != null ) {
                     MemberDetailAddress.AddressDep = value.Address;
                 }
-                memberSupplementaryDetailsControl.PersonalDetailsDep = value;
+                if ( memberSupplementaryDetailsControl != null ) {
+                    memberSupplementaryDetailsControl.PersonalDetailsDep = value;
+                }
+
+                if ( value.NextOfKin != null && NOKBasicPersonControl!=null ) {
+                    NOKBasicPersonControl.NameDep = value.NextOfKin.Name;
+                    NOKBasicPersonControl.AddressDep = value.NextOfKin.Address;
+                    NOKBasicPersonControl.UpdateLayout( );
+                }
+
+                if ( ReferencesTabControl != null ) {
+                    ReferencesTabControl.Items.Clear( );
+                    var references = DatabaseAccess.GetReferences( value.Id );
+                    if ( references != null && references.Count( ) > 0 ) {
+                        int i=1;
+                        foreach ( var reference in references ) {
+                            TabItem ti = new TabItem( );
+                            ti.Header = "REF" + i++;
+                            BasicPersonControl bpc = new BasicPersonControl( );
+                            bpc.NameDep = reference.Name;
+                            bpc.AddressDep = reference.Address;
+                            ti.Content = bpc;
+                            ReferencesTabControl.Items.Add( ti );
+                        }
+
+                    }
+                }
                 this.UpdateLayout( );
             }
         }

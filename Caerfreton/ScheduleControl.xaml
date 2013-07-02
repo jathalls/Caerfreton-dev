@@ -20,6 +20,7 @@
             <TextBox
                 x:Name="NameTextBox"
                 HorizontalAlignment="Stretch"
+                Text="{Binding Path=NeedDep.ShortDescription, Mode=TwoWay}"
                 
                 />
         </StackPanel>
@@ -41,7 +42,9 @@
                 <TextBox
                     x:Name="DurationText"
                     Width="80"
-                    Text="0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    Text="0" 
+                    HorizontalContentAlignment="Right" 
+                    VerticalContentAlignment="Center"/>
                 <ComboBox
                     x:Name="DurationUnitsComboBox"
                     Width="60"
@@ -67,6 +70,7 @@
         <TextBox
             Grid.Row="2"
             x:Name="NotesTextBox"
+            Text="{Binding Path=NeedDep.LongDescription, Mode=TwoWay}"
             />
         
         <StackPanel
@@ -97,7 +101,7 @@
                     <StackPanel
                         Orientation="Horizontal">
                         <RadioButton Content="Every " IsChecked="True" x:Name="EveryRadioButton"/>
-                        <TextBox x:Name="RepeatTextBox" Width="20" Text="0"/>
+                        <TextBox x:Name="RepeatTextBox" Width="20" Text="1"/>
                         <Label x:Name="RepeatUnits" Content="Day(s)"/>
                     </StackPanel>
                     

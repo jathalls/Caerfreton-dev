@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-d:\documents\visual studio 2012\Projects\Caerfreton\Caerfreton\obj\Debug\
+D:\Documents\Visual Studio 2012\Projects\Caerfreton-dev\Caerfreton\obj\Debug\
 Caerfreton
 none
 false
 DEBUG;TRACE
-d:\documents\visual studio 2012\Projects\Caerfreton\Caerfreton\App.xaml
-91500358234
+D:\Documents\Visual Studio 2012\Projects\Caerfreton-dev\Caerfreton\App.xaml
+10-823060497
 2-2080798524
-15-1437735044
-20-1258494397
-AddressControl.xaml;BasicPersonControl.xaml;ContactControl.xaml;MainWindow.xaml;MemberDetailViewControl.xaml;MemberListViewControl.xaml;MembersListControl.xaml;MemberSupplementaryDetailsControl.xaml;NameControl.xaml;
+16-1797828121
+231998393693
+AddressControl.xaml;BasicPersonControl.xaml;ContactControl.xaml;MainWindow.xaml;MemberDetailViewControl.xaml;MemberListViewControl.xaml;MembersListControl.xaml;MemberSupplementaryDetailsControl.xaml;NameControl.xaml;ScheduleControl.xaml;
 splashscreen1.png
 False
 

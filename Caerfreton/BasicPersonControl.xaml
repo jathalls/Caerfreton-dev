@@ -15,11 +15,13 @@
         <my:NameControl
             Grid.Row="0"
             x:Name="FullnameControl"
+            NameDep="{Binding Path=NameDep, Mode=TwoWay}"
             Margin="0,5,10,0"
             />
         <my:AddressControl
             Grid.Row="1"
             x:Name="FullAddressControl" Margin="0,5,10,0"
+            AddressDep="{Binding Path=AddressDep, Mode=TwoWay}"
             VerticalAlignment="Top"
             Height="220" 
             />

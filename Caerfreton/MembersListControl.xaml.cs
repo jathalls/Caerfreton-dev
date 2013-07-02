@@ -33,6 +33,7 @@ namespace Caerfreton {
             if ( (e as DataGridSelectionChangedEventArgs).selectedPersonalDetail != null ) {
                 memberDetailViewControl.MemberDetailDep = (e as DataGridSelectionChangedEventArgs).selectedPersonalDetail;
             }
+            UpdateLayout( );
         }
 
         private void ImportButton_Click( object sender, RoutedEventArgs e ) {

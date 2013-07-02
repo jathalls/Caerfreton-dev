@@ -473,6 +473,21 @@ namespace Caerfreton {
             return ( result );
         }
 
+        public static List<Reference> GetReferences( int memberId ) {
+            CFdbDataContext dc = new CFdbDataContext( );
+
+            var references =
+                from refer in dc.References
+                from lnk in dc.Link_PersonalDetails_References
+                where lnk.PersonalDetailsId == memberId && lnk.ReferenceId == refer.Id
+                select refer;
+
+            if ( references != null && references.Count( ) > 0 ) {
+                return ( references.ToList() );
+            }
+            return ( null );
+        }
+
         
     }
 }
